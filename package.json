@@ -5,10 +5,16 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "test": "node --test tests/theme.test.js tests/app.test.js tests/api.test.js",
+    "build": "node --check server.js && node --check public/app.js && node --check public/theme.js && node --check playwright.config.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "jsdom": "26.1.0"
   }
 }

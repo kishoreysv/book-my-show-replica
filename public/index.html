@@ -3,67 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DevNotes — a minimalist publication platform for engineers and builders." />
   <title>DevNotes - Developer Blog & Community</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23286044'/%3E%3Ctext x='8' y='24' fill='white' font-family='Georgia' font-size='24'%3ED%3C/text%3E%3C/svg%3E" />
+  <script src="theme.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="navbar">
-    <div class="logo">⚡ DevNotes</div>
-    <nav class="nav-links">
+    <a class="logo" href="/">DevNotes</a>
+    <nav class="nav-links" aria-label="Account and appearance">
       <span id="user-greeting" class="user-greeting hidden"></span>
-      <button id="auth-btn" class="btn btn-primary" onclick="toggleAuthModal()">Sign In</button>
+      <div class="appearance-control">
+        <label for="appearance">Appearance</label>
+        <select id="appearance" name="appearance">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+      <button id="auth-btn" class="btn btn-secondary" onclick="toggleAuthModal()">Sign In</button>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Ideas, Code & Insights</h1>
+  <main id="main" class="container" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Ideas, Code &amp; Insights</h1>
       <p>A minimalist publication platform for engineers and builders.</p>
     </section>
 
-    <!-- Post Creation Section (Visible after login) -->
-    <section id="create-post-section" class="card create-card hidden">
-      <h2>Write a New Story</h2>
+    <section id="create-post-section" class="card create-card hidden" aria-labelledby="create-title">
+      <h2 id="create-title">Write a New Story</h2>
       <form id="post-form" onsubmit="handleCreatePost(event)">
         <div class="form-group">
           <label for="post-title">Article Title</label>
-          <input type="text" id="post-title" placeholder="Give your post a compelling title..." required />
+          <input type="text" id="post-title" placeholder="Give your post a compelling title..." required aria-required="true" aria-describedby="post-title-error" />
+          <p id="post-title-error" class="field-error" role="alert"></p>
         </div>
         <div class="form-group">
           <label for="post-content">Story Body</label>
-          <textarea id="post-content" rows="4" placeholder="Share your insights..." required></textarea>
+          <textarea id="post-content" rows="4" placeholder="Share your insights..." required aria-required="true" aria-describedby="post-content-error"></textarea>
+          <p id="post-content-error" class="field-error" role="alert"></p>
         </div>
         <button type="submit" class="btn btn-accent">Publish Story</button>
       </form>
     </section>
+    <p id="workflow-status" class="workflow-status" role="status" aria-live="polite"></p>
 
-    <!-- Blog Feed -->
-    <section class="feed-section">
-      <h2>Latest Stories</h2>
+    <section class="feed-section" aria-labelledby="feed-title">
+      <h2 id="feed-title">Latest Stories</h2>
       <div id="posts-container" class="posts-grid"></div>
     </section>
   </main>
 
-  <!-- Login Modal -->
   <div id="auth-modal" class="modal-backdrop hidden">
-    <div class="modal">
-      <button class="modal-close" onclick="toggleAuthModal()">&times;</button>
-      <h2>Sign In to DevNotes</h2>
-      <p class="modal-sub">Enter any username to demo author permissions.</p>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="login-title" aria-describedby="login-description">
+      <button type="button" class="modal-close" aria-label="Close sign-in dialog" onclick="toggleAuthModal()">&times;</button>
+      <h2 id="login-title">Sign In to DevNotes</h2>
+      <p id="login-description" class="modal-sub">Enter any username to demo author permissions.</p>
       <form id="login-form" onsubmit="handleLogin(event)">
         <div class="form-group">
           <label for="username">Username</label>
-          <input type="text" id="username" placeholder="developer" required />
+          <input type="text" id="username" placeholder="developer" autocomplete="username" required aria-required="true" aria-describedby="username-error" />
+          <p id="username-error" class="field-error" role="alert"></p>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" placeholder="••••••••" required />
+          <input type="password" id="password" placeholder="••••••••" autocomplete="current-password" required aria-required="true" />
         </div>
         <button type="submit" class="btn btn-primary btn-block">Sign In</button>
       </form>
     </div>
   </div>
-
   <script src="app.js"></script>
 </body>
 </html>

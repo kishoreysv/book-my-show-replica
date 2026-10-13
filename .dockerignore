@@ -1,0 +1,17 @@
+.git
+.engine
+node_modules
+.env
+.env.*
+!.env.example
+graphify-out
+tests
+e2e
+test-results
+playwright-report
+coverage
+PLAN.md
+todos.yaml
+developer_metadata.json
+publish_manifest.yaml
+test_report.yaml

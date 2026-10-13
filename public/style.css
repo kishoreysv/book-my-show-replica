@@ -72,7 +72,7 @@ input::placeholder, textarea::placeholder { color: var(--text-muted); opacity: 1
 [aria-invalid="true"] { border-color: var(--error); }
 .field-error { color: var(--error); font-size: 0.875rem; margin-top: 0.5rem; }
 .field-error:empty, .workflow-status:empty { display: none; }
-.workflow-status { color: var(--text-muted); margin-bottom: 2rem; }
+.workflow-status { color: var(--text-muted); margin-bottom: 2rem; overflow-wrap: anywhere; }
 .btn { min-height: 44px; padding: 0.625rem 1.125rem; border: 1px solid transparent; border-radius: var(--radius); font-weight: 500; cursor: pointer; transition: background-color var(--duration) ease-out, border-color var(--duration) ease-out; }
 .btn-primary, .btn-accent { background: var(--accent); color: var(--on-primary); }
 .btn-primary:hover, .btn-accent:hover { background: var(--primary-hover); }

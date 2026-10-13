@@ -109,6 +109,112 @@ test('dialog traps both Tab directions, ignores interior clicks, closes and rest
   assert.equal(d.getElementById('auth-modal').classList.contains('hidden'), true);
 });
 
+test('closed dialog ignores keyboard events without changing focus or scroll', t => {
+  const w = page(t); const d = w.document;
+  const trigger = d.getElementById('auth-btn');
+  trigger.focus(); d.body.style.overflow = 'auto';
+  for (const key of ['Tab', 'Escape', 'a']) {
+    const event = new w.KeyboardEvent('keydown', { key, cancelable: true });
+    d.dispatchEvent(event);
+    assert.equal(event.defaultPrevented, false);
+    assert.equal(d.activeElement, trigger);
+    assert.equal(d.getElementById('auth-modal').classList.contains('hidden'), true);
+    assert.equal(d.body.style.overflow, 'auto');
+  }
+});
+
+test('Escape prevents default and closes the dialog restoring focus, scroll and background', t => {
+  const w = page(t); const d = w.document;
+  const trigger = d.getElementById('auth-btn');
+  d.body.style.overflow = 'auto'; trigger.focus(); trigger.click();
+  assert.equal(d.querySelector('header').inert, true);
+  assert.equal(d.querySelector('main').inert, true);
+  const event = new w.KeyboardEvent('keydown', { key: 'Escape', cancelable: true });
+  d.dispatchEvent(event);
+  assert.equal(event.defaultPrevented, true);
+  assert.equal(d.getElementById('auth-modal').classList.contains('hidden'), true);
+  assert.equal(d.activeElement, trigger);
+  assert.equal(d.body.style.overflow, 'auto');
+  assert.equal(d.querySelector('header').inert, false);
+  assert.equal(d.querySelector('main').inert, false);
+});
+
+test('forward Tab from the final dialog control wraps to the close button', t => {
+  const w = page(t); const d = w.document;
+  d.getElementById('auth-btn').click();
+  d.querySelector('#login-form button').focus();
+  const event = new w.KeyboardEvent('keydown', { key: 'Tab', cancelable: true });
+  d.dispatchEvent(event);
+  assert.equal(event.defaultPrevented, true);
+  assert.equal(d.activeElement, d.querySelector('.modal-close'));
+  assert.equal(d.getElementById('auth-modal').classList.contains('hidden'), false);
+});
+
+test('reverse Tab from the close button wraps to the final dialog control', t => {
+  const w = page(t); const d = w.document;
+  d.getElementById('auth-btn').click(); d.querySelector('.modal-close').focus();
+  const event = new w.KeyboardEvent('keydown', { key: 'Tab', shiftKey: true, cancelable: true });
+  d.dispatchEvent(event);
+  assert.equal(event.defaultPrevented, true);
+  assert.equal(d.activeElement, d.querySelector('#login-form button'));
+  assert.equal(d.getElementById('auth-modal').classList.contains('hidden'), false);
+});
+
+test('interior Tab in either direction and non-Tab keys remain ordinary unprevented input', t => {
+  const w = page(t); const d = w.document;
+  d.getElementById('auth-btn').click(); d.getElementById('username').focus();
+  for (const [key, shiftKey] of [['Tab', false], ['Tab', true], ['a', false], ['Enter', false]]) {
+    const event = new w.KeyboardEvent('keydown', { key, shiftKey, cancelable: true });
+    d.dispatchEvent(event);
+    assert.equal(event.defaultPrevented, false);
+    // jsdom does not perform native Tab navigation; the trap must leave focus alone.
+    assert.equal(d.activeElement.id, 'username');
+    assert.equal(d.getElementById('auth-modal').classList.contains('hidden'), false);
+  }
+});
+
+test('closing after the trigger is removed does not throw and restores scroll and inert state', t => {
+  const w = page(t); const d = w.document;
+  const trigger = d.getElementById('auth-btn');
+  d.body.style.overflow = 'scroll'; trigger.focus(); trigger.click();
+  assert.equal(d.body.style.overflow, 'hidden');
+  assert.equal(d.querySelector('header').inert, true);
+  assert.equal(d.querySelector('main').inert, true);
+  trigger.remove();
+  assert.equal(trigger.isConnected, false);
+  assert.doesNotThrow(() => w.closeAuthModal());
+  assert.equal(d.getElementById('auth-modal').classList.contains('hidden'), true);
+  assert.equal(d.body.style.overflow, 'scroll');
+  assert.equal(d.querySelector('header').inert, false);
+  assert.equal(d.querySelector('main').inert, false);
+  assert.notEqual(d.activeElement, trigger);
+  assert.doesNotThrow(() => w.closeAuthModal());
+  assert.equal(d.body.style.overflow, 'scroll');
+});
+
+test('very long unbroken username, title and body retain exact safe text through login and publishing', t => {
+  const w = page(t); const d = w.document;
+  const username = 'u'.repeat(4096) + '<img/src=x/onerror=bad()>';
+  const title = 't'.repeat(8192) + '<script>bad()</script>';
+  const body = 'b'.repeat(16384) + '<img/src=x/onerror=bad()>';
+  login(w, username);
+  assert.equal(d.getElementById('auth-btn').textContent, 'Sign Out');
+  assert.equal(d.getElementById('user-greeting').textContent, `Signed in as @${username}`);
+  assert.equal(d.getElementById('workflow-status').textContent, `Signed in as @${username}`);
+  assert.deepEqual(JSON.parse(w.localStorage.getItem('devnotes_user')), { username, role: 'Author' });
+  assert.equal(d.getElementById('user-greeting').children.length, 0);
+  fill(w, 'post-title', title); fill(w, 'post-content', body); submit(w, 'post-form');
+  const article = d.querySelector('.post-card');
+  assert.equal(d.querySelectorAll('.post-card').length, 3);
+  assert.equal(article.querySelector('h3').textContent, title);
+  assert.equal(article.querySelector('p').textContent, body);
+  assert.equal(article.querySelector('strong').textContent, `@${username}`);
+  assert.equal(article.querySelectorAll('img, script').length, 0);
+  assert.equal(d.getElementById('post-title').value, '');
+  assert.equal(d.getElementById('post-content').value, '');
+  assert.equal(d.getElementById('workflow-status').textContent, 'Story published.');
+});
+
 for (const username of ['', '  \n ']) {
   test(`empty username ${JSON.stringify(username)} exposes inline error without login`, t => {
     const w = page(t);

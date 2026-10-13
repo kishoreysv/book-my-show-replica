@@ -1,0 +1,1254 @@
+{
+  "nodes": [
+    {
+      "id": "e2e_themed_editorial_ui_spec",
+      "label": "themed-editorial-ui.spec.js",
+      "file_type": "code",
+      "source_file": "e2e/themed-editorial-ui.spec.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "e2e_themed_editorial_ui_spec_test_expect",
+      "label": "{ test, expect }",
+      "file_type": "code",
+      "source_file": "e2e/themed-editorial-ui.spec.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "e2e_themed_editorial_ui_spec_observe",
+      "label": "observe()",
+      "file_type": "code",
+      "source_file": "e2e/themed-editorial-ui.spec.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "e2e_themed_editorial_ui_spec_evidence",
+      "label": "evidence()",
+      "file_type": "code",
+      "source_file": "e2e/themed-editorial-ui.spec.js",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "e2e_themed_editorial_ui_spec_readable",
+      "label": "readable()",
+      "file_type": "code",
+      "source_file": "e2e/themed-editorial-ui.spec.js",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "e2e_themed_editorial_ui_spec_get",
+      "label": "get()",
+      "file_type": "code",
+      "source_file": "e2e/themed-editorial-ui.spec.js",
+      "source_location": "L168",
+      "_origin": "ast"
+    },
+    {
+      "id": "package",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 3
+    },
+    {
+      "id": "package_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "community": 3
+    },
+    {
+      "id": "package_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 3
+    },
+    {
+      "id": "package_description",
+      "label": "description",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "community": 3
+    },
+    {
+      "id": "package_main",
+      "label": "main",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 3
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 5
+    },
+    {
+      "id": "package_scripts_start",
+      "label": "start",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "community": 5
+    },
+    {
+      "id": "package_scripts_dev",
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 5
+    },
+    {
+      "id": "package_scripts_test",
+      "label": "test",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 4
+    },
+    {
+      "id": "package_dependencies_cors",
+      "label": "cors",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 4
+    },
+    {
+      "id": "package_dependencies_express",
+      "label": "express",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 4
+    },
+    {
+      "id": "package_devdependencies",
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_playwright_test",
+      "label": "@playwright/test",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_jsdom",
+      "label": "jsdom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "playwright_config",
+      "label": "playwright.config.js",
+      "file_type": "code",
+      "source_file": "playwright.config.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "playwright_config_defineconfig",
+      "label": "{ defineConfig }",
+      "file_type": "code",
+      "source_file": "playwright.config.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "public_app",
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 1
+    },
+    {
+      "id": "public_app_posts",
+      "label": "posts",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 1
+    },
+    {
+      "id": "public_app_init",
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "community": 1
+    },
+    {
+      "id": "public_app_updateui",
+      "label": "updateUI()",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L45",
+      "_origin": "ast",
+      "community": 1
+    },
+    {
+      "id": "public_app_toggleauthmodal",
+      "label": "toggleAuthModal()",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L57",
+      "_origin": "ast",
+      "community": 1
+    },
+    {
+      "id": "public_app_closeauthmodal",
+      "label": "closeAuthModal()",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L73",
+      "_origin": "ast"
+    },
+    {
+      "id": "public_app_handlemodalkeydown",
+      "label": "handleModalKeydown()",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L87",
+      "_origin": "ast"
+    },
+    {
+      "id": "public_app_setfielderror",
+      "label": "setFieldError()",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L112",
+      "_origin": "ast"
+    },
+    {
+      "id": "public_app_handlelogin",
+      "label": "handleLogin()",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L121",
+      "_origin": "ast",
+      "community": 1
+    },
+    {
+      "id": "public_app_handlesignout",
+      "label": "handleSignOut()",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L135",
+      "_origin": "ast",
+      "community": 1
+    },
+    {
+      "id": "public_app_handlecreatepost",
+      "label": "handleCreatePost()",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L146",
+      "_origin": "ast",
+      "community": 1
+    },
+    {
+      "id": "public_app_renderposts",
+      "label": "renderPosts()",
+      "file_type": "code",
+      "source_file": "public/app.js",
+      "source_location": "L167",
+      "_origin": "ast",
+      "community": 1
+    },
+    {
+      "id": "public_theme",
+      "label": "theme.js",
+      "file_type": "code",
+      "source_file": "public/theme.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "public_theme_applytheme",
+      "label": "applyTheme()",
+      "file_type": "code",
+      "source_file": "public/theme.js",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "server",
+      "label": "server.js",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 2
+    },
+    {
+      "id": "server_express",
+      "label": "express",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 2
+    },
+    {
+      "id": "server_cors",
+      "label": "cors",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "community": 2
+    },
+    {
+      "id": "server_path",
+      "label": "path",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 2
+    },
+    {
+      "id": "server_app",
+      "label": "app",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 2
+    },
+    {
+      "id": "server_posts",
+      "label": "posts",
+      "file_type": "code",
+      "source_file": "server.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 2
+    },
+    {
+      "id": "tests_api_test",
+      "label": "api.test.js",
+      "file_type": "code",
+      "source_file": "tests/api.test.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_api_test_test_before_after",
+      "label": "{ test, before, after }",
+      "file_type": "code",
+      "source_file": "tests/api.test.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_api_test_assert",
+      "label": "assert",
+      "file_type": "code",
+      "source_file": "tests/api.test.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_api_test_spawn",
+      "label": "{ spawn }",
+      "file_type": "code",
+      "source_file": "tests/api.test.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_api_test_once",
+      "label": "{ once }",
+      "file_type": "code",
+      "source_file": "tests/api.test.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_api_test_post",
+      "label": "post()",
+      "file_type": "code",
+      "source_file": "tests/api.test.js",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_app_test",
+      "label": "app.test.js",
+      "file_type": "code",
+      "source_file": "tests/app.test.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_app_test_test",
+      "label": "{ test }",
+      "file_type": "code",
+      "source_file": "tests/app.test.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_app_test_assert",
+      "label": "assert",
+      "file_type": "code",
+      "source_file": "tests/app.test.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_app_test_readfilesync",
+      "label": "{ readFileSync }",
+      "file_type": "code",
+      "source_file": "tests/app.test.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_app_test_jsdom",
+      "label": "{ JSDOM }",
+      "file_type": "code",
+      "source_file": "tests/app.test.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_app_test_html",
+      "label": "html",
+      "file_type": "code",
+      "source_file": "tests/app.test.js",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_app_test_source",
+      "label": "source",
+      "file_type": "code",
+      "source_file": "tests/app.test.js",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_app_test_page",
+      "label": "page()",
+      "file_type": "code",
+      "source_file": "tests/app.test.js",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_app_test_submit",
+      "label": "submit()",
+      "file_type": "code",
+      "source_file": "tests/app.test.js",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_app_test_fill",
+      "label": "fill()",
+      "file_type": "code",
+      "source_file": "tests/app.test.js",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_app_test_login",
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "tests/app.test.js",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_theme_test",
+      "label": "theme.test.js",
+      "file_type": "code",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_theme_test_test",
+      "label": "{ test }",
+      "file_type": "code",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_theme_test_assert",
+      "label": "assert",
+      "file_type": "code",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_theme_test_readfilesync",
+      "label": "{ readFileSync }",
+      "file_type": "code",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_theme_test_jsdom",
+      "label": "{ JSDOM }",
+      "file_type": "code",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_theme_test_source",
+      "label": "source",
+      "file_type": "code",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_theme_test_page",
+      "label": "page()",
+      "file_type": "code",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L9",
+      "_origin": "ast"
+    }
+  ],
+  "links": [
+    {
+      "source": "e2e_themed_editorial_ui_spec",
+      "target": "e2e_themed_editorial_ui_spec_test_expect",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e2e/themed-editorial-ui.spec.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "e2e_themed_editorial_ui_spec",
+      "target": "e2e_themed_editorial_ui_spec_observe",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e2e/themed-editorial-ui.spec.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "e2e_themed_editorial_ui_spec",
+      "target": "e2e_themed_editorial_ui_spec_evidence",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e2e/themed-editorial-ui.spec.js",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "e2e_themed_editorial_ui_spec",
+      "target": "e2e_themed_editorial_ui_spec_readable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e2e/themed-editorial-ui.spec.js",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "e2e_themed_editorial_ui_spec",
+      "target": "e2e_themed_editorial_ui_spec_get",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "e2e/themed-editorial-ui.spec.js",
+      "source_location": "L168",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_description",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_scripts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_start",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_test",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_cors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_express",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_devdependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_playwright_test",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_jsdom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "playwright_config",
+      "target": "playwright_config_defineconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playwright.config.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_posts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_init",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_updateui",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_toggleauthmodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_closeauthmodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_handlemodalkeydown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_setfielderror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_handlelogin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L121",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_handlesignout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_handlecreatepost",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_renderposts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L167",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_init",
+      "target": "public_app_closeauthmodal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_init",
+      "target": "public_app_setfielderror",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_init",
+      "target": "public_app_updateui",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_init",
+      "target": "public_app_renderposts",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_toggleauthmodal",
+      "target": "public_app_closeauthmodal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_handlemodalkeydown",
+      "target": "public_app_closeauthmodal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_handlelogin",
+      "target": "public_app_setfielderror",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_handlelogin",
+      "target": "public_app_closeauthmodal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_handlelogin",
+      "target": "public_app_updateui",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_handlesignout",
+      "target": "public_app_updateui",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_handlecreatepost",
+      "target": "public_app_setfielderror",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_handlecreatepost",
+      "target": "public_app_renderposts",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/app.js",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "public_theme",
+      "target": "public_theme_applytheme",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/theme.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_express",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_cors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_path",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_app",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_posts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_api_test",
+      "target": "tests_api_test_test_before_after",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/api.test.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_api_test",
+      "target": "tests_api_test_assert",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/api.test.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_api_test",
+      "target": "tests_api_test_spawn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/api.test.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_api_test",
+      "target": "tests_api_test_once",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/api.test.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_api_test",
+      "target": "tests_api_test_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/api.test.js",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test",
+      "target": "tests_app_test_test",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test",
+      "target": "tests_app_test_assert",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test",
+      "target": "tests_app_test_readfilesync",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test",
+      "target": "tests_app_test_jsdom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test",
+      "target": "tests_app_test_html",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test",
+      "target": "tests_app_test_source",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test",
+      "target": "tests_app_test_page",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test",
+      "target": "tests_app_test_submit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test",
+      "target": "tests_app_test_fill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test",
+      "target": "tests_app_test_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test_login",
+      "target": "tests_app_test_fill",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_app_test_login",
+      "target": "tests_app_test_submit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/app.test.js",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_theme_test",
+      "target": "tests_theme_test_test",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_theme_test",
+      "target": "tests_theme_test_assert",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_theme_test",
+      "target": "tests_theme_test_readfilesync",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_theme_test",
+      "target": "tests_theme_test_jsdom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_theme_test",
+      "target": "tests_theme_test_source",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_theme_test",
+      "target": "tests_theme_test_page",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/theme.test.js",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ],
+  "metadata": {
+    "built_at": "2026-10-13T14:07:55.132410+00:00",
+    "version": "graph_update-v1",
+    "codebase_root": "C:\\artifacts-v2\\T0132PcJVCRTV000413102613504997\\developer",
+    "force": true,
+    "files_scanned": 10
+  }
+}

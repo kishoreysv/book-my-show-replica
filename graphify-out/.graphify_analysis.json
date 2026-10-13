@@ -1,0 +1,139 @@
+{
+  "communities": {
+    "0": [
+      "index_app_js",
+      "index_handlecreatepost",
+      "index_handlelogin",
+      "index_html",
+      "index_style_css",
+      "index_toggleauthmodal",
+      "readme_api_login",
+      "readme_api_posts",
+      "readme_devnotes"
+    ],
+    "1": [
+      "public_app",
+      "public_app_handlecreatepost",
+      "public_app_handlelogin",
+      "public_app_handlesignout",
+      "public_app_init",
+      "public_app_posts",
+      "public_app_renderposts",
+      "public_app_toggleauthmodal",
+      "public_app_updateui"
+    ],
+    "2": [
+      "server",
+      "server_app",
+      "server_cors",
+      "server_express",
+      "server_path",
+      "server_posts"
+    ],
+    "3": [
+      "package",
+      "package_description",
+      "package_main",
+      "package_name",
+      "package_version"
+    ],
+    "4": [
+      "package_dependencies",
+      "package_dependencies_cors",
+      "package_dependencies_express"
+    ],
+    "5": [
+      "package_scripts",
+      "package_scripts_dev",
+      "package_scripts_start"
+    ]
+  },
+  "cohesion": {
+    "0": 0.25,
+    "1": 0.3888888888888889,
+    "2": 0.3333333333333333,
+    "3": 0.4,
+    "4": 0.6666666666666666,
+    "5": 0.6666666666666666
+  },
+  "gods": [
+    {
+      "id": "public_app_updateui",
+      "label": "updateUI()",
+      "degree": 4
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 3
+    },
+    {
+      "id": "public_app_init",
+      "label": "init()",
+      "degree": 3
+    },
+    {
+      "id": "public_app_handlelogin",
+      "label": "handleLogin()",
+      "degree": 3
+    },
+    {
+      "id": "public_app_renderposts",
+      "label": "renderPosts()",
+      "degree": 3
+    },
+    {
+      "id": "public_app_toggleauthmodal",
+      "label": "toggleAuthModal()",
+      "degree": 2
+    },
+    {
+      "id": "public_app_handlesignout",
+      "label": "handleSignOut()",
+      "degree": 2
+    },
+    {
+      "id": "public_app_handlecreatepost",
+      "label": "handleCreatePost()",
+      "degree": 2
+    },
+    {
+      "id": "readme_devnotes",
+      "label": "DevNotes Application",
+      "degree": 2
+    },
+    {
+      "id": "readme_api_login",
+      "label": "/api/login",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "handleLogin(event)",
+      "target": "/api/login",
+      "source_files": [
+        "public/index.html",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "handleCreatePost(event)",
+      "target": "/api/posts",
+      "source_files": [
+        "public/index.html",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 1732,
+    "output": 1796
+  }
+}
